@@ -9,8 +9,12 @@
     INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
     IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
  --><buildSettings xmlns="http://www.ibm.worklight.com/build-settings">
+    <android>
+        <minification includes="**" level="none"/>
+        <concatenation includes="**"/>
+    </android>
     <iphone>
-        <minification includes="**" level="simple"/>
+        <minification includes="**" level="none"/>
         <concatenation includes="**"/>
     </iphone>
 </buildSettings>
