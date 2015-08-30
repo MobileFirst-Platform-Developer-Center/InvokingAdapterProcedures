@@ -29,8 +29,8 @@ function loadFeeds(){
 	 * iOS, Android, Windows Phone 8, Windows 8. 
 	 * If your application supports other hybrid environments, see the tutorial for MobileFirst 6.3.
 	 */
-	var resourceRequest = new WLResourceRequest("/adapters/RSSReader/getFeedsFiltered", WLResourceRequest.GET);
-	resourceRequest.setQueryParameter("params", "['technology']");
+	var resourceRequest = new WLResourceRequest("/adapters/RSSReader/getFeedFiltered", WLResourceRequest.GET);
+	resourceRequest.setQueryParameter("params", "['MobileFirst_Platform']");
 	resourceRequest.send().then(
 			loadFeedsSuccess,
 			loadFeedsFailure
